@@ -122,7 +122,7 @@ extension UIViewController {
             y:self.view.frame.size.height-60,
             width: self.view.frame.size.width,
             height: 60))
-        toastLabel.backgroundColor = Constants.Color.toastColor
+        toastLabel.backgroundColor = Constants.Colors.toastColor
         toastLabel.textColor = UIColor.white
         toastLabel.textAlignment = .center;
         toastLabel.font = UIFont(name: "Verdana", size: 13.0)

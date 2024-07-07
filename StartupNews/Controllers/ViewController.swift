@@ -7,13 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ConnectionsWrapperDelegate {
 
+    var data = [Article]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        ConnectionsWrapper.sharedInstance.delegate = self
+        ConnectionsWrapper.sharedInstance.getArticles()
     }
 
-
+    func getDataFromServer(data: [Article]) {
+        self.data = data
+        DispatchQueue.main.async {
+            print(self.data)
+            //self.table.reloadData()
+        }
+    }
 }
 

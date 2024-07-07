@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct NewsItem: Decodable {
+ 
+    let author: String
+    let author: String
+    let author: String
+    let author: String
+    let author: String
+    let author: String
+    let author: String
+    let author: String
+    let author: String
+}

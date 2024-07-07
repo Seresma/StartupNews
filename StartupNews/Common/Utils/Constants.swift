@@ -9,7 +9,9 @@ import UIKit
 
 struct Constants {
     
-    static let APP_NAME = "Nombre de la App"
+    static let APP_NAME = "StartupNews"
+    static let BASE_URL = "https://inshortsapi.vercel.app/news?category=startup"
+    static let API_KEY = "API KEY"
     
     //MARK: -  IDENTIFIERS
     struct Identifiers {
@@ -20,14 +22,14 @@ struct Constants {
     }
     
     //MARK: -  COLORS
-    struct Color {
+    struct Colors {
         static let toastColor = UIColor(named: "#485864")
         static let colorDisableButton = UIColor(named: "#ebebeb")
         static let yellowColor = UIColor(named: "#eac117")
     }
     
     //MARK: -  ENVIRONMENT
-    struct Environment {
+    struct Environments {
         static let TRAINING = "http://la URL que sea"
         static let PRODUCTION = "http://la URL que sea"
     }
