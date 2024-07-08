@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import AlamofireImage
 
 protocol ConnectionsWrapperDelegate {
     func getDataFromServer(data: [Article])
@@ -38,6 +39,24 @@ class ConnectionsWrapper: NSObject {
             }
         }
         
+    }
+    
+    // Closure con escape, se hace de forma síncrona
+    func fetchImage(from url: String, completion: @escaping (UIImage?) -> Void) {
+            
+            guard let imageURL = URL(string: url) else {
+                completion(nil)
+                return
+            }
+
+            AF.request(imageURL).responseImage { response in
+            
+            if case .success(let image) = response.result {
+                completion(image)
+            } else {
+                completion(nil)
+            }
+        }
     }
     
     //MARK: SINGLETON

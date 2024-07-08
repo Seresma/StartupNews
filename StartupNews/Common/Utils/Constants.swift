@@ -18,7 +18,6 @@ struct Constants {
         static let homeView = "homeView"
         static let loginView = "loginView"
         static let rememberView = "rememberView"
-        
     }
     
     //MARK: -  COLORS

@@ -7,6 +7,36 @@
 
 import UIKit
 
+//MARK: - UILABEL
+extension UILabel {
+    // Método para wrappear las palabras
+    func setWordWrapping() {
+        self.numberOfLines = 0
+        self.lineBreakMode = .byWordWrapping
+    }
+}
+
+//MARK: - ACITIVITYINDICATORVIEW
+extension UIActivityIndicatorView {
+    // Método para esperar 3 segundos
+    func waitRandomTime() {
+        let randomTime = Double.random(in: 0.5...1.5)
+        DispatchQueue.main.asyncAfter(deadline: .now() + randomTime) {
+            // Ocultar el Activity Indicator después de 3 segundos
+            self.stopAnimating()
+        }
+    }
+}
+
+//MARK: - IMAGEVIEW
+extension UIImageView {
+    func roundCorners(radius: CGFloat) {
+        self.layer.cornerRadius = radius
+        self.clipsToBounds = true
+    }
+}
+
+
 //MARK: - CGFLOAT
 extension CGFloat{
     
