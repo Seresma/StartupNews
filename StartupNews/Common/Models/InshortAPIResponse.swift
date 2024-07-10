@@ -2,7 +2,7 @@
 //  InshortAPIResponse.swift
 //  StartupNews
 //
-//  Created by Admin on 07/07/2024.
+//  Created by Sergio Escudero Manzano on 07/07/2024.
 //
 
 import Foundation

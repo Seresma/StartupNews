@@ -2,7 +2,7 @@
 //  Coordinator.swift
 //  StartupNews
 //
-//  Created by Admin on 08/07/2024.
+//  Created by Sergio Escudero Manzano on 08/07/2024.
 //
 
 import Foundation

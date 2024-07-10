@@ -18,9 +18,7 @@
 		7F36A8592C3A909D00501C8E /* StartupNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A8582C3A909D00501C8E /* StartupNewsUITestsLaunchTests.swift */; };
 		7F36A86D2C3A91FE00501C8E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A86C2C3A91FE00501C8E /* Extensions.swift */; };
 		7F36A86F2C3A920C00501C8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A86E2C3A920C00501C8E /* Constants.swift */; };
-		7F36A8732C3A925C00501C8E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A8722C3A925C00501C8E /* Reachability.swift */; };
 		7F36A8752C3A926F00501C8E /* ConnectionsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A8742C3A926F00501C8E /* ConnectionsWrapper.swift */; };
-		7F36A8772C3A929900501C8E /* NSUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A8762C3A929900501C8E /* NSUserDefaultManager.swift */; };
 		7F36A87A2C3A952A00501C8E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F36A8792C3A952A00501C8E /* Alamofire */; };
 		7F36A87C2C3A952A00501C8E /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7F36A87B2C3A952A00501C8E /* AlamofireDynamic */; };
 		7F36A8842C3A9B1600501C8E /* InshortAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36A8832C3A9B1600501C8E /* InshortAPIResponse.swift */; };
@@ -66,9 +64,7 @@
 		7F36A8582C3A909D00501C8E /* StartupNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F36A86C2C3A91FE00501C8E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7F36A86E2C3A920C00501C8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7F36A8722C3A925C00501C8E /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		7F36A8742C3A926F00501C8E /* ConnectionsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsWrapper.swift; sourceTree = "<group>"; };
-		7F36A8762C3A929900501C8E /* NSUserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUserDefaultManager.swift; sourceTree = "<group>"; };
 		7F36A8832C3A9B1600501C8E /* InshortAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InshortAPIResponse.swift; sourceTree = "<group>"; };
 		7F36A8882C3B33BE00501C8E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		7F36A88B2C3B5C0E00501C8E /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -198,7 +194,6 @@
 		7F36A8692C3A918800501C8E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				7F36A8702C3A921700501C8E /* DeafultsManager */,
 				7F36A8712C3A922400501C8E /* HttpManager */,
 			);
 			path = Managers;
@@ -221,19 +216,10 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		7F36A8702C3A921700501C8E /* DeafultsManager */ = {
-			isa = PBXGroup;
-			children = (
-				7F36A8762C3A929900501C8E /* NSUserDefaultManager.swift */,
-			);
-			path = DeafultsManager;
-			sourceTree = "<group>";
-		};
 		7F36A8712C3A922400501C8E /* HttpManager */ = {
 			isa = PBXGroup;
 			children = (
 				7F36A8742C3A926F00501C8E /* ConnectionsWrapper.swift */,
-				7F36A8722C3A925C00501C8E /* Reachability.swift */,
 			);
 			path = HttpManager;
 			sourceTree = "<group>";
@@ -401,13 +387,11 @@
 				7F36A8902C3B694E00501C8E /* CoordinatorDelegate.swift in Sources */,
 				7F36A86F2C3A920C00501C8E /* Constants.swift in Sources */,
 				7F36A83A2C3A909C00501C8E /* ViewController.swift in Sources */,
-				7F36A8732C3A925C00501C8E /* Reachability.swift in Sources */,
 				7F36A8842C3A9B1600501C8E /* InshortAPIResponse.swift in Sources */,
 				7F36A8752C3A926F00501C8E /* ConnectionsWrapper.swift in Sources */,
 				7F36A8362C3A909C00501C8E /* AppDelegate.swift in Sources */,
 				7F36A8892C3B33BE00501C8E /* CustomTableViewCell.swift in Sources */,
 				7F36A8922C3B6AA900501C8E /* Coordinator.swift in Sources */,
-				7F36A8772C3A929900501C8E /* NSUserDefaultManager.swift in Sources */,
 				7F36A8942C3B6BC900501C8E /* MainCoordinator.swift in Sources */,
 				7F36A8382C3A909C00501C8E /* SceneDelegate.swift in Sources */,
 				7F36A86D2C3A91FE00501C8E /* Extensions.swift in Sources */,

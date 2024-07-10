@@ -2,7 +2,7 @@
 //  ConnectionsWrapper.swift
 //  StartupNews
 //
-//  Created by Admin on 07/07/2024.
+//  Created by Sergio Escudero Manzano on 07/07/2024.
 //
 
 import UIKit
@@ -17,13 +17,11 @@ class ConnectionsWrapper: NSObject {
     
     var articlesArray = [Article]()
     
-    // Propiedad del protocolo
     var delegate: ConnectionsWrapperDelegate?
     
-    //MÉTODOS DE CONEXIÓN. GENERALMENTE MÉTODOS QUE TÚ CREAS QUE LUEGO LLAMAN A FUNCIONES DE ALAMOFIRE
-    func getArticles() {
+    func getArticles(category: Categories) {
         
-        AF.request(Constants.BASE_URL).responseDecodable(of: InshortAPIResponse.self) { response in
+        AF.request("\(Constants.BASE_URL)\(Constants.Endpoints.category)\(category)").responseDecodable(of: InshortAPIResponse.self) { response in
             
             switch response.result {
             case .success(let newsResponse):
@@ -41,7 +39,6 @@ class ConnectionsWrapper: NSObject {
         
     }
     
-    // Closure con escape, se hace de forma síncrona
     func fetchImage(from url: String, completion: @escaping (UIImage?) -> Void) {
             
             guard let imageURL = URL(string: url) else {
@@ -59,7 +56,6 @@ class ConnectionsWrapper: NSObject {
         }
     }
     
-    //MARK: SINGLETON
     static let sharedInstance: ConnectionsWrapper = {
         let instance = ConnectionsWrapper()
         return instance
